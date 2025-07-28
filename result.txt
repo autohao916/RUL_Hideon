@@ -1,0 +1,18 @@
+FD001  11.81  232.92  batch=512, lr=0.005, alpha=0.001, dropout=0.8
+
+FD002  12.06  636.13  batch=128, lr=0.005, alpha=0.001, dropout=0.6
+
+FD003  11.58  274.92  batch=128, lr=0.005, alpha=0.001, dropout=0.6
+
+FD004  13.31  891.07  batch=128, lr=0.005, alpha=0.01, dropout=0.3
+
+
+在FD001和FD002的消融实验
+去掉自相关机制：
+FD001  test_rmse 12.24, test_score 294.80
+FD002  test_rmse 13.58, test_score 2033.06
+
+去掉动态卷积：
+FD001  test_rmse 15.22, test_score 447.84
+FD002  test_rmse 14.51, test_score 1883.02
+
